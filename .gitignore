@@ -1,0 +1,7 @@
+node_modules
+dist
+!dist/notilus.db
+!dist/main.js
+build
+NotilusDB-darwin-x64
+config.js

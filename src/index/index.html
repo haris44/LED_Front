@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" data-senna-track="permanent" src="bundle.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta charset="UTF-8">
+    <title>LED Controller</title>
+</head>
+
+<body data-senna id="body">
+
+    <div data-senna-surface id="logo">
+
+    </div>
+
+    <div data-senna-surface id="content" class="senna-transition-fade">
+        <div data-bind="foreach : led">
+            <span class="red" data-bind="click : $parent.send, style : { backgroundColor : color} ">
+                <span data-bind="text : name"></span>
+            </span>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
