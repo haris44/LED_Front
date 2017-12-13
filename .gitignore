@@ -1,6 +1,7 @@
 node_modules
 dist
 !dist/notilus.db
+!dist/index.css
 !dist/main.js
 build
 NotilusDB-darwin-x64
