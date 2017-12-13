@@ -1,5 +1,5 @@
 node_modules
-dist
+dist/*
 !dist/notilus.db
 !dist/index.css
 !dist/main.js
