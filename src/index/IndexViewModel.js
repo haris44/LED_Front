@@ -1,5 +1,4 @@
 'use strict'
-export * from '../scss/app.scss'
 import $ from 'jquery'
 import ko from 'knockout'
 import { led } from './led'
@@ -18,11 +17,13 @@ export class IndexViewModel extends ViewModelBase {
     }
 
     loadViewModel() {
+        this.ip = ko.observable()
         this.led = ko.observableArray(led)
     }
 
-    send(el) {
-        fetch(Global.api + 'led/' + el.code, {
+    send(_, el) {
+        console.log(el)
+        fetch("http://" + this.ip() + ':8000/led/' + el.code, {
             method: 'GET',
         })
     }
